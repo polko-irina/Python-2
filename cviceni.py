@@ -40,3 +40,5 @@ data["prijat"] = data.apply(prijat, axis=1)
 data["prijat_cut"] = pandas.cut(data["poradi"], bins=[0,30,float("inf")], labels=["Ano", "Ne"])
 
 print(data.tail())
+
+# nmm

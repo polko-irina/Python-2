@@ -8,3 +8,4 @@ print(data.head(15))
 
 # viteze = data.sort_values(["Rank"] == 1)
 # print(viteze)
+

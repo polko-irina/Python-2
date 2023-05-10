@@ -48,8 +48,8 @@ data_pivot = data_pivot.sort_values("zmena strany", ascending=False)
 # print(data_pivot)
 
 # Vytvoř sloupcový graf s 10 státy, kde došlo k nejčastější změně vítězné strany. Jako výšku sloupce nastav počet změn.
-top_swinging_states = data_pivot[data_pivot["zmena strany"] >= 1]
-top_swinging_states.plot(kind="bar", color="green")
+graf = data_pivot[data_pivot["zmena strany"] >=2 ]
+graf.plot(kind="bar", color="green")
 plt.xlabel("state")
 plt.ylabel("počet zmen")
 plt.show()
